@@ -3,7 +3,8 @@ $(function () {
     var form = $('#ajax-contact');
 
     // Get the messages div.
-    var formMessages = $('#form-messages');
+    var formMessages = $('#form-error-ul');
+    var heading = $("#messages-heading");
 
     $(form).submit(function (event) {
         event.preventDefault();
@@ -20,7 +21,11 @@ $(function () {
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
 
-                $(formMessages).text(response);
+                document.getElementById("form-messages").style.display = "block";
+                document.getElementById("form-messages").style.border = "2px solid #47735b";
+
+                $(heading).text('Ihre Anfrage war erfolgreich')
+                $(formMessages).text(data.responseText);
 
                 $('#vorname').val('');
                 $('#nachname').val('');
@@ -34,9 +39,17 @@ $(function () {
                 $(formMessages).removeClass('success');
                 $(formMessages).addClass('error');
 
+                document.getElementById("form-messages").style.display = "block";
+                document.getElementById("form-messages").style.border = "2px solid red";
+
+
+
                 if (data.responseText !== '') {
+                    console.log(data);
+                    $(heading).text('Folgende Fehler sind aufgetreten:')
                     $(formMessages).text(data.responseText);
                 } else {
+                    console.log(data);
                     $(formMessages).text('Ups! Da ist wohl was schiefgelaufen.');
                 }
             });

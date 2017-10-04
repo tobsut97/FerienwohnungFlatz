@@ -17,6 +17,43 @@ html {
     color: #333333;
 }
 
+#form-messages {
+    display: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+#messages-heading {
+    color: #333;
+    text-align: center;
+}
+
+#form-error-ul {
+    padding: 0;
+}
+
+.form-message-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: end;
+}
+
+.error {
+    display: block !important;
+}
+
+.success {
+    display: block !important;
+}
+
 button.hamburger {
     display: none;
 }
@@ -652,9 +689,7 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
-    body,
-    html {
-        height: 100%;
+    .wrapper {
         overflow-x: hidden;
     }
     .header-inner>p {

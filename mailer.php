@@ -36,27 +36,28 @@
 
        // Check that data was sent to the mailer.
         if ( empty($name) OR empty($nachname) OR !filter_var($mail, FILTER_VALIDATE_EMAIL) OR empty($telefon) OR empty($nachricht) OR empty($anreise) OR empty($abreise) ) {
+            $errors = array();
             http_response_code(400);
             if (empty($name)) {
-                echo "name empty";
+                $errors[0] = "Das Feld Vorname ist leer";
             } 
             if (empty($nachname)) {
-                echo "nachname empty";
+                $errors[1] = "Das Feld Nachname ist leer"; 
             } 
             if (empty($mail)) {
-                echo "mail empty";
+                $errors[2] = "Das Feld Emailadresse ist leer";
             } 
             if (empty($telefon)){
-                echo "telefon empty";
+                $errors[3] = "Das Feld Telefonnummer ist leer";
             } 
             if (empty($nachricht)){
-                echo "nachricht empty";
+                $errors[4] = "Das Feld Nachricht ist leer";
             } 
             if (empty($anreise)){
-                echo "anreise empty";
+                $errors[5] = "Das Feld Anreise ist leer";
             } 
             if (empty($abreise)){
-                echo "abreise empty";
+                $errors[6] = "Das Feld Abreise ist leer";
             }
             exit;
         }

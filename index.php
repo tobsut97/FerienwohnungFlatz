@@ -70,130 +70,133 @@
             </nav>
         </div>
     </header>
-    <div class="content">
-        <div class="hero" id="image">
-            <div class="hero-content">
-                <h1 class="hero-heading">Ferienwohnung Flatz</h1>
-                <div class="hero-subtitle">Urlaub mit Gemütlichkeitsfaktor</div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="hero" id="image">
+                <div class="hero-content">
+                    <h1 class="hero-heading">Ferienwohnung Flatz</h1>
+                    <div class="hero-subtitle">Urlaub mit Gemütlichkeitsfaktor</div>
+                </div>
             </div>
         </div>
-    </div>
-    <main>
-        <section class="welcome-section">
-            <div class="general-info">
-                <div class="general-info-text">
-                    <h2>
-                        Herzlich Willkommen
-                    </h2>
-                    <p id="welcome-text">
-                        In der Ferienwohnung Flatz genießen Sie Ihren Urlaub auf 800m Seehöhe in vollkommener Ruhe und Gelassenheit. Ein wenig abseits vom Ortszentrum an einem sonnigen Südhang befindet sich die Ferienwohnung. Naturliebhaber werden diese Gegend lieben. Von hier aus können Sie im Sommer viele Wanderungen starten und im Winter setzt man sich einfach auf den Schlitten und rodelt los oder begibt sich in eines der tollen Skigebiete im Bregenzerwald. Ihre Gastgeberin Ottilia Flatz freut sich schon auf Ihren Besuch und ist bei Fragen immer für Sie da.
-                    </p>
-                    <button class="button-not-hamburger" href="anfrage.php" type="button">
+        <main>
+            <section class="welcome-section">
+                <div class="general-info">
+                    <div class="general-info-text">
+                        <h2>
+                            Herzlich Willkommen
+                        </h2>
+                        <p id="welcome-text">
+                            In der Ferienwohnung Flatz genießen Sie Ihren Urlaub auf 800m Seehöhe in vollkommener Ruhe und Gelassenheit. Ein wenig abseits vom Ortszentrum an einem sonnigen Südhang befindet sich die Ferienwohnung. Naturliebhaber werden diese Gegend lieben. Von hier aus können Sie im Sommer viele Wanderungen starten und im Winter setzt man sich einfach auf den Schlitten und rodelt los oder begibt sich in eines der tollen Skigebiete im Bregenzerwald. Ihre Gastgeberin Ottilia Flatz freut sich schon auf Ihren Besuch und ist bei Fragen immer für Sie da.
+                        </p>
+                        <button class="button-not-hamburger" href="anfrage.php" type="button">
                     <a href="anfrage.php">Unverbindlich Anfragen</a>
                     </button>
-                </div>
-                <div class="general-info-image">
-                    <img id="general-info-background" src="assets/ferienwohnung_flatz_01.jpg" alt="eingang">
-                </div>
-            </div>
-        </section>
-
-        <section class="preise-section" id="preise">
-            <div class="general-info">
-                <div class="general-info-text">
-                    <h2>
-                        Preise
-                    </h2>
-                    <p id="price-text">
-                        Eine Buchung ist ab <span class="important-price-info">mindestens drei Nächten</span> möglich. <br>Alle Preise sind <span class="important-price-info">inklusive Gästetaxe und Endreinigung</span>. Zusätzlich erhalten Sie die <span class="important-price-info">Bregenzerwaldcard</span>. Mit dieser können sie alle Bergbahnen, öffentlichen Verkehrsmittel und Schwimmbäder im Bregenzerwald nutzen. Verpflegung ist nicht im Preis inkludiert. Auf Anfrage können Sie jedoch bei Ihrer Vermieterin Ottilia Flatz Brot bestellen.
-                    </p>
-                </div>
-                <div class="pricing-info-section">
-                    <div class="row">
-                        <h4 class="price-list-heading">Preisliste</h4>
                     </div>
-                    <div class="row">
-                        <span class="pricing-span">Pro Nacht für 2 Personen</span> <span class="price">48€</span>
-                    </div>
-                    <div class="row">
-                        <span class="pricing-span">Jede zusätzliche erwachsene Person</span> <span class="price">14€</span>
-                    </div>
-                    <div class="row">
-                        <span class="pricing-span">Jedes Kind (bis 8 Jahre)</span> <span class="price">9€</span>
+                    <div class="general-info-image">
+                        <img id="general-info-background" src="assets/ferienwohnung_flatz_01.jpg" alt="eingang">
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <h2 id="background-heading">Impressionen</h2>
+            <section class="preise-section" id="preise">
+                <div class="general-info">
+                    <div class="general-info-text">
+                        <h2>
+                            Preise
+                        </h2>
+                        <p id="price-text">
+                            Eine Buchung ist ab <span class="important-price-info">mindestens drei Nächten</span> möglich. <br>Alle Preise sind <span class="important-price-info">inklusive Gästetaxe und Endreinigung</span>. Zusätzlich erhalten Sie die <span class="important-price-info">Bregenzerwaldcard</span>. Mit dieser können sie alle Bergbahnen, öffentlichen Verkehrsmittel und Schwimmbäder im Bregenzerwald nutzen. Verpflegung ist nicht im Preis inkludiert. Auf Anfrage können Sie jedoch bei Ihrer Vermieterin Ottilia Flatz Brot bestellen.
+                        </p>
+                    </div>
+                    <div class="pricing-info-section">
+                        <div class="row">
+                            <h4 class="price-list-heading">Preisliste</h4>
+                        </div>
+                        <div class="row">
+                            <span class="pricing-span">Pro Nacht für 2 Personen</span> <span class="price">48€</span>
+                        </div>
+                        <div class="row">
+                            <span class="pricing-span">Jede zusätzliche erwachsene Person</span> <span class="price">14€</span>
+                        </div>
+                        <div class="row">
+                            <span class="pricing-span">Jedes Kind (bis 8 Jahre)</span> <span class="price">9€</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div id="impressions">
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Almabtrieb in Schwarzenberg</p>
+            <h2 id="background-heading">Impressionen</h2>
+
+            <div id="impressions">
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Almabtrieb in Schwarzenberg</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Alpaabtrieb-Schwarzenberg-(c)-Franz-Oberhauser---Vorarlberg-Tourismus.jpg" alt="Alpabtrieb" class="impressions-image image-1">
                 </div>
-                <img src="assets/ImpressionsImages/Alpaabtrieb-Schwarzenberg-(c)-Franz-Oberhauser---Vorarlberg-Tourismus.jpg" alt="Alpabtrieb" class="impressions-image image-1">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Ferienwohnung Flatz von vorne</p>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Ferienwohnung Flatz von vorne</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/ferienwohnung_flatz_06.jpg" alt="Haus vorne" class="impressions-image image-2">
                 </div>
-                <img src="assets/ImpressionsImages/ferienwohnung_flatz_06.jpg" alt="Haus vorne" class="impressions-image image-2">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Angelika Kauffmann Museum in Schwarzenberg</p>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Angelika Kauffmann Museum in Schwarzenberg</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Ausstellungsraum-Angelika-Kauffmann-Museum-Schwarzenberg.jpg" alt="Angelika Kauffmann Museum" class="impressions-image image-3">
                 </div>
-                <img src="assets/ImpressionsImages/Ausstellungsraum-Angelika-Kauffmann-Museum-Schwarzenberg.jpg" alt="Angelika Kauffmann Museum" class="impressions-image image-3">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Ferienwohnung Flatz von der Straße</p>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Ferienwohnung Flatz von der Straße</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/ferienwohnung_flatz_08.jpg" alt="Haus von der Straße" class="impressions-image image-4">
                 </div>
-                <img src="assets/ImpressionsImages/ferienwohnung_flatz_08.jpg" alt="Haus von der Straße" class="impressions-image image-4">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Schwarzenberger Kirche im Sommer</p>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Schwarzenberger Kirche im Sommer</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Kirche-Schwarzenberg.jpg" alt="Kirche Schwarzenberg" class="impressions-image image-5">
                 </div>
-                <img src="assets/ImpressionsImages/Kirche-Schwarzenberg.jpg" alt="Kirche Schwarzenberg" class="impressions-image image-5">
+
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Blick aus Ihrem Küchenfenster</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/ferienwohnung_flatz_13.jpg" alt="Blick durchs Fenster" class="impressions-image image-6">
+                </div>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Schwarzenberger Kirche im Winter</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Schwarzenberg_Winter.jpg" alt="Winter Schwarzenberg" class="impressions-image image-7">
+                </div>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Adventmarkt in Schwarzenberg</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Schwarzenberger-Advent.jpg" alt="Advent Schwarzenberg" class="impressions-image image-8">
+                </div>
+                <div class="impressions-image-wrapper">
+                    <div class="impressions-inner-wrapper">
+                        <p class="overlay-impression-text">Angelika Kauffmann Museumshaus</p>
+                    </div>
+                    <img src="assets/ImpressionsImages/Angelika-Kauffmann-Museum-Schwarzenberg-(c)-Adolf-Bereuter---AK-Museum.jpg" alt="AK Museum" class="impressions-image image-9">
+                </div>
             </div>
 
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Blick aus Ihrem Küchenfenster</p>
-                </div>
-                <img src="assets/ImpressionsImages/ferienwohnung_flatz_13.jpg" alt="Blick durchs Fenster" class="impressions-image image-6">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Schwarzenberger Kirche im Winter</p>
-                </div>
-                <img src="assets/ImpressionsImages/Schwarzenberg_Winter.jpg" alt="Winter Schwarzenberg" class="impressions-image image-7">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Adventmarkt in Schwarzenberg</p>
-                </div>
-                <img src="assets/ImpressionsImages/Schwarzenberger-Advent.jpg" alt="Advent Schwarzenberg" class="impressions-image image-8">
-            </div>
-            <div class="impressions-image-wrapper">
-                <div class="impressions-inner-wrapper">
-                    <p class="overlay-impression-text">Angelika Kauffmann Museumshaus</p>
-                </div>
-                <img src="assets/ImpressionsImages/Angelika-Kauffmann-Museum-Schwarzenberg-(c)-Adolf-Bereuter---AK-Museum.jpg" alt="AK Museum" class="impressions-image image-9">
-            </div>
+        </main>
+        <div class="contact">
+            <h5 class="footer-heading">Ferienwohnung Ottilia Flatz</h5>
+            <p class="footer-text">Tel. +43 664 8962976</p>
+            <p class="footer-text">
+                <a href="mailto:ottilia.flatz@gmail.com">ottilia.flatz@gmail.com</a>
+            </p>
+            <p class="footer-text">6867 Schwarzenberg | Brittenberg 480</p>
         </div>
-
-    </main>
-    <div class="contact">
-        <h5 class="footer-heading">Ferienwohnung Ottilia Flatz</h5>
-        <p class="footer-text">Tel. +43 664 8962976</p>
-        <p class="footer-text">
-            <a href="mailto:ottilia.flatz@gmail.com">ottilia.flatz@gmail.com</a>
-        </p>
-        <p class="footer-text">6867 Schwarzenberg | Brittenberg 480</p>
     </div>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript">
