@@ -1,0 +1,766 @@
+@font-face {
+    font-family: 'Nevis';
+    src: url('nevis.ttf');
+    /* IE9 Compat Modes */
+    url('nevis.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.message-box {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+
+button.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+body {
+    margin: 0 0;
+    padding: 60px 20px 20px 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    max-width: 620px;
+    color: #323648;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-element>a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-element>a:hover {
+    color: #000;
+}
+
+.nav-element>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-element>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/ferienwohnung_flatz_07.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 54px;
+    color: #323648;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 23, 34, 0.3);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.hero-heading {
+    font-size: 81px;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.general-info {
+    background-color: white;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.general-info-text {
+    padding: 15px 10px 15px 30px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#general-info-background {
+    display: block;
+    min-width: 90%;
+    max-width: 100%;
+    min-height: 80%;
+    height: auto;
+}
+
+#welcome-text {
+    padding-bottom: 20px;
+}
+
+#price-text {
+    max-width: 530px;
+    line-height: 29px;
+    padding-bottom: 70px;
+}
+
+.button-not-hamburger {
+    all: initial;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.30);
+    background-color: #47735b;
+    background-image: linear-gradient(302deg, #47735b 0%, #8ab87f 100%);
+    padding: 20px 20px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.button-not-hamburger a {
+    color: white;
+}
+
+.header-inner {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+header {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .15), 0 2px 5px rgba(0, 0, 0, .015);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 9500;
+}
+
+.header-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #323648;
+    letter-spacing: 0.1em;
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 150px;
+    color: #333333;
+}
+
+#last-li {
+    padding-right: 20px;
+}
+
+.site-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.main-wohnung,
+.main-preise {
+    margin-top: 60px;
+}
+
+.wohnung-info {
+    color: #444;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.active-nav-element {
+    border-bottom: 2px #333 solid;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 70;
+    font-family: 'Fira Sans', sans-serif;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin: 0;
+}
+
+.wohnung-heading {
+    padding-bottom: 10px;
+}
+
+.wohnung-info-boxes {
+    background-color: white;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px 10px 100px 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 80px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.wohnung-img {
+    max-width: 640px;
+    height: auto;
+    width: auto;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.anfrage-heading {
+    font-weight: 400;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: #47735b;
+    text-transform: none;
+    letter-spacing: normal;
+    max-width: 850px;
+    line-height: 48px;
+}
+
+h4 {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.anfrage-main {
+    padding: 15px 10px 100px 30px;
+    margin-top: 60px;
+}
+
+.anfrage-textblock {
+    padding-top: 30px;
+}
+
+input {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+input:focus {
+    border: 2px solid #47735b;
+    outline: none;
+}
+
+.form {
+    padding-top: 50px;
+}
+
+input[name=Mail] {
+    width: 350px;
+}
+
+label {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.sub-h4 {
+    padding-top: 20px;
+}
+
+div.anreise,
+div.abreise {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+input[type="date"] {
+    display: block;
+    width: 110%;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+textarea {
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    margin-right: 30px;
+    resize: none;
+    width: 580px;
+    opacity: 0.9;
+}
+
+textarea:focus {
+    border: 2px solid #47735b;
+    outline: none;
+    resize: none;
+}
+
+input[type="submit"] {
+    all: initial;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.30);
+    background-color: #47735b;
+    background-image: linear-gradient(302deg, #47735b 0%, #8ab87f 100%);
+    padding: 20px 20px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.30);
+}
+
+.pricing-info-section {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333333;
+    /*    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/ferienwohnung_flatz_13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+
+.important-price-info {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.additional-pricing {
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.price-h4 {
+    margin: 0px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.price-p {
+    color: #ffffff;
+    font-size: 17px;
+    margin: 0px;
+    padding-bottom: 25px;
+}
+
+#sub-heading-price {
+    padding-bottom: 35px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.button-not-hamburger:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.30);
+}
+
+.contact {
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 100vw;
+    height: 200px;
+    background-color: white;
+    margin-left: -30px;
+}
+
+.pricing-span {
+    display: inline-block;
+    color: #ffffff;
+    padding-right: 90px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    width: 350px;
+}
+
+.price {
+    display: inline;
+    font-family: 'Fira Sans', sans-serif;
+    color: #ffffff;
+    text-align: right;
+    font-weight: 400;
+}
+
+.footer-heading {
+    color: #333333;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-text {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    padding-left: 200px;
+    padding-bottom: 30px;
+}
+
+.price-list-heading {
+    margin-left: -5px;
+}
+
+.impressions {
+    display: grid;
+}
+
+main {
+    z-index: 1;
+}
+
+.main-aktivitaeten {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    text-align: center;
+}
+
+.sommer,
+.winter {
+    background-color: white;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.card-heading {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8,
+.image-9 {
+    max-width: 100%;
+    max-height: 550px;
+}
+
+
+/*.image-2 {
+    margin-top: 50px;
+}
+
+.image-3 {
+    margin-top: -50px;
+}
+
+.image-5 {
+    margin-top: -100px;
+}
+
+.image-6 {
+    margin-top: -50px;
+}*/
+
+#impressions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#background-heading {
+    z-index: -1;
+    color: #333333;
+    opacity: 0.1;
+    text-align: center;
+    font-size: 120px;
+    padding-top: 20px;
+}
+
+.impressions-image {
+    transition: .4s all;
+}
+
+.impressions-image-wrapper:hover .impressions-image {
+    filter: brightness(30%);
+    -webkit-filter: brightness(20%);
+}
+
+.impressions-image-wrapper {
+    position: relative;
+}
+
+.impressions-image-wrapper>.impressions-inner-wrapper:hover {
+    opacity: 1;
+}
+
+.impressions-inner-wrapper {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    z-index: 100;
+}
+
+.impressions-inner-wrapper p {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.impressions-image-wrapper:hover>.impressions-inner-wrapper p {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    body,
+    html {
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .header-inner>p {
+        font-size: 16px;
+    }
+    .nav-element>a {
+        font-size: 14px;
+        min-width: 90px;
+    }
+    li {
+        padding-left: 90px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .header-brand {
+        width: 23%;
+    }
+    #last-li-a {
+        padding-right: 20px;
+        min-width: 150px;
+    }
+    nav {
+        width: 70%;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 25px;
+        max-width: 440px;
+    }
+    button {
+        padding: 15px 15px;
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .general-info-image {
+        padding-top: 50px;
+        padding-right: 50px;
+    }
+    .row {
+        padding-left: 80px;
+    }
+    .pricing-span {
+        padding-right: 60px;
+        width: 300px;
+    }
+    .pricing-info-section {
+        padding-top: 30px;
+    }
+    #wohnung-text {
+        max-width: 470px;
+        line-height: 29px;
+    }
+    #impressions {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    li {
+        display: none;
+    }
+    .header-brand {}
+    .hero-heading {
+        font-size: 51px;
+    }
+    .hero-subtitle {
+        font-size: 32px;
+    }
+    button.hamburger {
+        display: block;
+    }
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        left: 100%;
+        width: 300px;
+        height: 800px;
+        background-color: white;
+        transition: all .4s;
+        z-index: -1;
+    }
+    .in-viewport {
+        transform: translateX(-300px);
+    }
+    .mobile-ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: -100px;
+    }
+    .mobile-ul>li>a {
+        color: #333;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 700;
+    }
+    .mobile-ul>li {
+        display: inline;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
