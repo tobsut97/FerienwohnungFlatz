@@ -34,6 +34,7 @@
        
         
 
+/*
        // Check that data was sent to the mailer.
         if ( empty($name) OR empty($nachname) OR !filter_var($mail, FILTER_VALIDATE_EMAIL) OR empty($telefon) OR empty($nachricht) OR empty($anreise) OR empty($abreise) ) {
             $errors = array();
@@ -41,18 +42,9 @@
             if (empty($name)) {
                 $errors[0] = "Das Feld Vorname ist leer";
             } 
-            if (empty($nachname)) {
-                $errors[1] = "Das Feld Nachname ist leer"; 
-            } 
             if (empty($mail)) {
                 $errors[2] = "Das Feld Emailadresse ist leer";
-            } 
-            if (empty($telefon)){
-                $errors[3] = "Das Feld Telefonnummer ist leer";
-            } 
-            if (empty($nachricht)){
-                $errors[4] = "Das Feld Nachricht ist leer";
-            } 
+            }  
             if (empty($anreise)){
                 $errors[5] = "Das Feld Anreise ist leer";
             } 
@@ -61,6 +53,7 @@
             }
             exit;
         }
+*/
 
 
         // Set the recipient email address.

@@ -27,6 +27,29 @@ html {
     text-align: center;
 }
 
+input::placeholder {
+    opacity: 0.5;
+}
+
+.form-column {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+.form-column>label {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    padding-left: 3px;
+}
+
 #messages-heading {
     color: #333;
     text-align: center;
@@ -34,6 +57,12 @@ html {
 
 #form-error-ul {
     padding: 0;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding-bottom: 8px;
 }
 
 .form-message-container {
@@ -46,12 +75,12 @@ html {
     align-items: end;
 }
 
-.error {
-    display: block !important;
-}
-
-.success {
-    display: block !important;
+.error{
+    display:inline;
+    font-family: 'Fira Sans', sans-serif;
+    color: red;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
 button.hamburger {
@@ -372,9 +401,8 @@ h4 {
 
 input {
     font-family: 'Fira Sans', sans-serif;
-    padding: 20px;
+    padding: 17px;
     font-size: 16px;
-    margin-right: 30px;
 }
 
 input:focus {
@@ -399,17 +427,12 @@ label {
     padding-top: 20px;
 }
 
-div.anreise,
-div.abreise {
-    display: inline-block;
-    margin-right: 100px;
-}
-
 input[type="date"] {
     display: block;
-    width: 110%;
+    width: 100%;
     color: #b3b3b3;
     text-transform: uppercase;
+    margin-right: 30px;
 }
 
 textarea {
@@ -421,6 +444,7 @@ textarea {
     resize: none;
     width: 580px;
     opacity: 0.9;
+    border: 1px solid rgba(0,0,0,0.2);
 }
 
 textarea:focus {

@@ -33,7 +33,7 @@
                         <a href="wohnung.php">Die Wohnung</a>
                     </li>
                     <li class="nav-element">
-                        <a href="index.#preise">Preise</a>
+                        <a href="index.php#preise">Preise</a>
                     </li>
                     <li class="nav-element">
                         <a href="aktivitaeten.php">Aktivitäten</a>

@@ -39,8 +39,10 @@ $(function () {
                 $(formMessages).removeClass('success');
                 $(formMessages).addClass('error');
 
+/*
                 document.getElementById("form-messages").style.display = "block";
                 document.getElementById("form-messages").style.border = "2px solid red";
+*/
 
 
 

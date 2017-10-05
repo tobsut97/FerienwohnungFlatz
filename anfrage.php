@@ -50,23 +50,36 @@
         <p class="anfrage-textblock">Bitte füllen Sie einfach die nachfolgenden Felder aus. Ihre Daten werden natürlich vertraulich behandelt und dienen keinen Werbezwecken. <br>Ich werde Sie dann per Mail oder Telefon kontaktieren. </p>
         <div class="form-message-container">
             <div class="form">
-                <form id="ajax-contact" action="mailer.php" method="post">
-                    <h4>Persönliche Daten</h4>
-                    <input type="text" name="Vorname" placeholder="Vorname" id="vorname">
-                    <input type="text" name="Nachname" placeholder="Nachname" id="nachname">
-                    <h4 class="sub-h4">Kontaktdaten</h4>
-                    <input type="email" name="Mail" placeholder="Emailadresse" id="mail">
-                    <input type="tel" name="Telefon" placeholder="Telefonnummer" id="telefon">
-                    <br>
-                    <div class="anreise">
-                        <h4 class="sub-h4">Gewünschte Anreise</h4>
+                <form id="ajax-contact" action="mailer.php" method="post" onsubmit="return validateForm()">
+                    <!--                    <h4>Persönliche Daten</h4>-->
+                    <div class="form-column">
+                        <label for="Vorname">Vorname *</label>
+                        <input type="text" name="Vorname" placeholder="Max" id="vorname">
+                        <span class="error" id="error-vorname"></span>
+                    </div>
+                    <div class="form-column">
+                        <label for="Nachname">Nachname</label>
+                        <input type="text" name="Nachname" placeholder="Mustermann" id="nachname">
+                    </div>
+                    <div class="form-column">
+                        <label for="Mail">Emailadresse *</label>
+                        <input type="email" name="Mail" placeholder="max.mustermann@gmail.com" id="mail">
+                        <span class="error" id="error-mail"></span>
+                    </div>
+                    <div class="form-column">
+                        <label for="Telefon">Telefonnummer</label>
+                        <input type="tel" name="Telefon" placeholder="+43 664 1234567" id="telefon">
+                    </div>
+                    <div class="form-column">
+                        <label for="anreise">Anreisedatum *</label>
                         <input type="date" name="anreise" id="anreise">
+                        <span class="error" id="error-anreise"></span>
                     </div>
-                    <div class="abreise">
-                        <h4 class="sub-h4">Gewünschte Abreise</h4>
+                    <div class="form-column">
+                        <label for="abreise">Abreisedatum *</label>
                         <input type="date" name="abreise" id="abreise">
+                        <span class="error" id="error-abreise"></span>
                     </div>
-                    <h4 class="sub-h4">nachricht</h4>
                     <textarea name="Nachricht" id="nachricht" cols="30" rows="10" placeholder="Hier ist Platz für Ihre persönliche Nachricht an mich"></textarea>
                     <input type="submit" value="anfrage senden">
                 </form>
@@ -86,4 +99,69 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        function validateForm() {
+            var vorname = $("#vorname").val();
+            var mail = $("#mail").val();
+            var anreise = $("#anreise").val();
+            var abreise = $("#abreise").val();
+
+            function dateDiffInDays(abreise, anreise) {
+                var _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+                var abreiseNew = new Date(abreise);
+                var anreiseNew = new Date(anreise);
+
+                var utc1 = Date.UTC(abreiseNew.getFullYear(), abreiseNew.getMonth(), abreiseNew.getDate());
+                var utc2 = Date.UTC(anreiseNew.getFullYear(), anreiseNew.getMonth(), anreiseNew.getDate());
+
+                return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+            }
+
+            checkFields(vorname, mail, abreise, anreise);
+
+            function checkFields(vorname, mail, abreise, anreise) {
+
+
+                var remainingDays = dateDiffInDays(anreise, abreise);
+
+                if (vorname == "") {
+                    document.getElementById("vorname").style.border = "2px solid red";
+                    document.getElementById("error-vorname").style.display = "inline";
+                    $("#error-vorname").text('Bitte füllen Sie dieses Feld aus');
+                }
+                if (mail == "") {
+                    document.getElementById("mail").style.border = "2px solid red";
+                    document.getElementById("error-mail").style.display = "inline";
+                    $("#error-mail").text('Bitte füllen Sie dieses Feld aus');
+                }
+                if (abreise == "") {
+                    document.getElementById("abreise").style.border = "2px solid red";
+                    document.getElementById("error-abreise").style.display = "inline";
+                    $("#error-abreise").text('Bitte füllen Sie dieses Feld aus');
+                }
+                if (anreise == "") {
+                    document.getElementById("anreise").style.border = "2px solid red";
+                    document.getElementById("error-anreise").style.display = "inline";
+                    $("#error-anreise").text('Bitte füllen Sie dieses Feld aus');
+                }
+
+                if (anreise > abreise) {
+                    document.getElementById("anreise").style.border = "2px solid red";
+                    $("#error-anreise").text('Ihr Anreisedatum ist nach Ihrem Abreisedatum');
+                }
+
+                if (remainingDays < 3) { // Apply you login on remaining days
+                    console.log(remainingDays);
+                    document.getElementById("anreise").style.border = "2px solid red";
+                    document.getElementById("abreise").style.border = "2px solid red";
+                    $("#error-anreise").text('Sie müssen mindestens drei Nächte auswählen');
+                }
+
+            }
+
+
+        }
+
+    </script>
 </body>
