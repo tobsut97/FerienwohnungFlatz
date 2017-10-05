@@ -75,8 +75,8 @@ label {
     align-items: end;
 }
 
-.error{
-    display:inline;
+.error {
+    display: inline;
     font-family: 'Fira Sans', sans-serif;
     color: red;
     font-size: 14px;
@@ -444,7 +444,7 @@ textarea {
     resize: none;
     width: 580px;
     opacity: 0.9;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 textarea:focus {
@@ -780,6 +780,9 @@ main {
 }
 
 @media screen and (max-width: 950px) {
+    .wrapper {
+        overflow-x: hidden;
+    }
     li {
         display: none;
     }
@@ -821,5 +824,69 @@ main {
         display: inline;
         padding: 0;
         padding-bottom: 30px;
+    }
+    #background-heading {
+        font-size: 90px;
+    }
+    .row {
+        padding-left: 60px;
+    }
+    .preise-mobile {
+        grid-column-gap: 0px !important;
+    }
+    .price-br {
+        display: none;
+    }
+    .pricing-span {
+        max-width: 200px;
+        padding-right: 40px;
+    }
+    #price-text {
+        max-width: 300px;
+        padding-bottom: 30px;
+    }
+    .pricing-info-section {
+        padding-top: 62px;
+    }
+    .contact {
+        padding-bottom: 30px;
+        padding-top:30px;
+        height:auto;
+        width:auto;
+        text-align: center;
+    }
+    .footer-text{
+        max-width: initial;
+    }
+    #general-info-background{
+        min-width: initial;
+        min-height: initial;
+    }
+    .general-info-image{
+        padding-top: 75px;
+        padding-right: 15px;
+    }
+    .general-info-text{
+        padding-left:15px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .button-not-hamburger{
+        display: none;
+    }
+    .general-info-image{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    #mobile-button-not-hamburger{
+        display: inline-block;
+        margin-top: auto;
+        text-align: center;
+    }
+    
+    #welcome-text{
+        letter-spacing: 0.012em;
     }
 }

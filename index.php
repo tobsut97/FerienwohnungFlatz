@@ -27,50 +27,50 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="header-inner">
-            <p class="header-brand"><a href="index.php">FERIENWOHNUNG FLATZ</a></p>
-            <nav>
-                <ul>
-                    <li class="nav-element">
-                        <a href="wohnung.php">Die Wohnung</a>
-                    </li>
-                    <li class="nav-element">
-                        <a href="#preise">Preise</a>
-                    </li>
-                    <li class="nav-element">
-                        <a href="aktivitaeten.php">Aktivitäten</a>
-                    </li>
-                    <li class="nav-element" id="last-li">
-                        <a href="anfrage.php" id="last-li-a">Unverbindliche Anfrage</a>
-                    </li>
-                </ul>
-                <button class="hamburger hamburger--collapse" type="button">
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <p class="header-brand"><a href="index.php">FERIENWOHNUNG FLATZ</a></p>
+                <nav>
+                    <ul>
+                        <li class="nav-element">
+                            <a href="wohnung.php">Die Wohnung</a>
+                        </li>
+                        <li class="nav-element">
+                            <a href="#preise">Preise</a>
+                        </li>
+                        <li class="nav-element">
+                            <a href="aktivitaeten.php">Aktivitäten</a>
+                        </li>
+                        <li class="nav-element" id="last-li">
+                            <a href="anfrage.php" id="last-li-a">Unverbindliche Anfrage</a>
+                        </li>
+                    </ul>
+                    <button class="hamburger hamburger--collapse" type="button">
                   <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                   </span>
                 </button>
-                <div class="mobile-nav">
-                    <ul class="mobile-ul">
-                        <li>
-                            <a href="wohnung.php">Die Wohnung</a>
-                        </li>
-                        <li>
-                            <a href="#preise">Preise</a>
-                        </li>
-                        <li>
-                            <a href="aktivitaeten.php">Aktivitäten</a>
-                        </li>
-                        <li>
-                            <a href="anfrage.php">Unverbindliche Anfrage</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="wrapper">
+                    <div class="mobile-nav">
+                        <ul class="mobile-ul">
+                            <li>
+                                <a href="wohnung.php">Die Wohnung</a>
+                            </li>
+                            <li>
+                                <a href="#preise">Preise</a>
+                            </li>
+                            <li>
+                                <a href="aktivitaeten.php">Aktivitäten</a>
+                            </li>
+                            <li>
+                                <a href="anfrage.php">Unverbindliche Anfrage</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         <div class="content">
             <div class="hero" id="image">
                 <div class="hero-content">
@@ -95,18 +95,21 @@
                     </div>
                     <div class="general-info-image">
                         <img id="general-info-background" src="assets/ferienwohnung_flatz_01.jpg" alt="eingang">
+                        <button class="button-not-hamburger" id="mobile-button-not-hamburger" href="anfrage.php" type="button">
+                        <a href="anfrage.php">Unverbindlich Anfragen</a>
+                        </button>
                     </div>
                 </div>
             </section>
 
             <section class="preise-section" id="preise">
-                <div class="general-info">
+                <div class="general-info preise-mobile">
                     <div class="general-info-text">
                         <h2>
                             Preise
                         </h2>
                         <p id="price-text">
-                            Eine Buchung ist ab <span class="important-price-info">mindestens drei Nächten</span> möglich. <br>Alle Preise sind <span class="important-price-info">inklusive Gästetaxe und Endreinigung</span>. Zusätzlich erhalten Sie die <span class="important-price-info">Bregenzerwaldcard</span>. Mit dieser können sie alle Bergbahnen, öffentlichen Verkehrsmittel und Schwimmbäder im Bregenzerwald nutzen. Verpflegung ist nicht im Preis inkludiert. Auf Anfrage können Sie jedoch bei Ihrer Vermieterin Ottilia Flatz Brot bestellen.
+                            Eine Buchung ist ab <span class="important-price-info">mindestens drei Nächten</span> möglich. <br class="price-br">Alle Preise sind <span class="important-price-info">inklusive Gästetaxe und Endreinigung</span>. Zusätzlich erhalten Sie die <span class="important-price-info">Bregenzerwaldcard</span>. Mit dieser können sie alle Bergbahnen, öffentlichen Verkehrsmittel und Schwimmbäder im Bregenzerwald nutzen. Verpflegung ist nicht im Preis inkludiert. Auf Anfrage können Sie jedoch bei Ihrer Vermieterin Ottilia Flatz Brot bestellen.
                         </p>
                     </div>
                     <div class="pricing-info-section">

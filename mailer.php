@@ -34,7 +34,7 @@
        
         
 
-/*
+
        // Check that data was sent to the mailer.
         if ( empty($name) OR empty($nachname) OR !filter_var($mail, FILTER_VALIDATE_EMAIL) OR empty($telefon) OR empty($nachricht) OR empty($anreise) OR empty($abreise) ) {
             $errors = array();
@@ -53,7 +53,7 @@
             }
             exit;
         }
-*/
+
 
 
         // Set the recipient email address.
