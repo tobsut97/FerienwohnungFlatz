@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
 
     <title>Ferienwohnung Ottilia Flatz - Wohnung</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
@@ -55,7 +55,7 @@
                                 <a href="wohnung.php">Die Wohnung</a>
                             </li>
                             <li>
-                                <a href="#preise">Preise</a>
+                                <a href="index.php#preise">Preise</a>
                             </li>
                             <li>
                                 <a href="aktivitaeten.php">Aktivitäten</a>
@@ -195,10 +195,27 @@
             delay: 200,
             viewFactor: 0.2
         });
-        
+
         $(".hamburger").click(function() {
             $("button.hamburger").toggleClass("is-active");
             $(".mobile-nav").toggleClass("in-viewport");
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 150
+                }, 900, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
         });
 
     </script>

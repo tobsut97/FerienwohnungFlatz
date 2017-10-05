@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: 'Nevis';
     src: url('nevis.ttf');
     /* IE9 Compat Modes */
@@ -850,43 +850,65 @@ main {
     }
     .contact {
         padding-bottom: 30px;
-        padding-top:30px;
-        height:auto;
-        width:auto;
+        padding-top: 30px;
+        height: auto;
+        width: auto;
         text-align: center;
     }
-    .footer-text{
+    .footer-text {
         max-width: initial;
     }
-    #general-info-background{
+    #general-info-background {
         min-width: initial;
         min-height: initial;
     }
-    .general-info-image{
+    .general-info-image {
         padding-top: 75px;
         padding-right: 15px;
     }
-    .general-info-text{
-        padding-left:15px;
+    .general-info-text {
+        padding-left: 15px;
     }
-    h2{
+    h2 {
         font-size: 30px;
     }
-    .button-not-hamburger{
+    .button-not-hamburger {
         display: none;
     }
-    .general-info-image{
+    .general-info-image {
         display: flex;
         flex-direction: column;
         padding-bottom: 50px;
     }
-    #mobile-button-not-hamburger{
+    #mobile-button-not-hamburger {
         display: inline-block;
         margin-top: auto;
         text-align: center;
     }
-    
-    #welcome-text{
+    #welcome-text {
         letter-spacing: 0.012em;
     }
-}
+    .anfrage-heading {
+        font-size: 35px;
+        max-width: 600px;
+    }
+    .anfrage-textblock {
+        padding-top: 20px;
+    }
+    @media screen and (max-width: 950px) {
+        .hero-heading{
+            font-size: 32px;
+        }
+        .hero-subtitle{
+            font-size:22px;
+        }
+        .hero{
+            background-position: 60% 0%;
+            max-height: 90%;
+            height: auto;
+        }
+        .hero-content{
+            min-height: 90%;
+            height: auto;
+        }
+    }
