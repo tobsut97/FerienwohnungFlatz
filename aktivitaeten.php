@@ -75,42 +75,42 @@
                         <img src="assets/Icons/HikingBoot.svg" alt="Bergschuhe" class="activity-icon">
                         <p>Wandern</p>
                         <span class="activity-text">Die Ferienwohnung Flatz befindet sich inmitten des Bregenzerwaldes. Entweder Sie machen sich einfach selbst auf den Weg und erkunden die sagenhafte Landschaft oder Sie erkundigen sich bei Ihrer Vermieterin Ottilia.</span>
-                        <a href="http://www.bregenzerwald.at/s/de/wandern/" class="activity-links">Wanderungen</a>
+                        <a href="http://www.bregenzerwald.at/s/de/wandern/" class="activity-links">Wandern im Sommer</a>
                     </li>
                     <li>
-                        <img src="assets/Icons/Baden.svg" alt="Bergschuhe" class="activity-icon">
+                        <img src="assets/Icons/Baden.svg" alt="baden" class="activity-icon">
                         <p>BADEN</p>
                         <span class="activity-text">Nach einem anstregenden Wandertag ist eine Abkühlung genau das Richtige. Dadurch, dass es im Bregenzerwald etliche Schwimmbäder und die Bregenzerach gibt, ist Badespaß für die ganze Familie garantiert.</span>
                         <a href="https://www.outdooractive.com/de/freibaeder/bregenzerwald/freibaeder-im-bregenzerwald/21860709/" class="activity-links">Freibäder</a>
                     </li>
                     <li>
-                        <img src="assets/Icons/Schubertiade.svg" alt="Bergschuhe" class="activity-icon">
+                        <img src="assets/Icons/Schubertiade.svg" alt="schubertiade" class="activity-icon">
                         <p>schubertiade</p>
                         <span class="activity-text">Alljährlich findet die Schubertiade in Schwarzenberg statt. In der Ferienwohnung Flatz finden Sie den perfekten Wohnort, um abseits des Schubertiadetrubels abzuschalten.</span>
                         <a href="                        http://www.schubertiade.at/
     " class="activity-links">Informationen zur Schubertiade</a>
                     </li>
                     <li>
-                        <img src="assets/Icons/Ausfluege.svg" alt="Bergschuhe" class="activity-icon">
+                        <img src="assets/Icons/Ausfluege.svg" alt="trips" class="activity-icon">
                         <p>ausflüge</p>
                         <span class="activity-text">Schwarzenberg ist der perfekt Ausgangsort für zahlreiche Ausflüge. Ob Familienausflüge oder Ausflüge ins 3-Länder-Eck, von Schwarzenberg aus erreichen Sie alle Ausflugsziele gut.  </span>
                         <a href="                        https://www.bregenzerwald.at/thema/ausfluege/
     " class="activity-links">Ausflugstipps</a>
                     </li>
                     <li>
-                        <img src="assets/Icons/Events.svg" alt="Bergschuhe" class="activity-icon">
+                        <img src="assets/Icons/Events.svg" alt="events" class="activity-icon">
                         <p>veranstaltungen</p>
                         <span class="activity-text">Das ganze Jahr über finden im Bregenzerwald bzw. in Vorarlberg zahlreiche interessante Veranstaltungen statt. Von klassischen Veranstaltungen wie dem Schwarzenberger Adventmarkt bis hin zu modernen Veranstaltungen wie das FAQ Festival. </span>
                         <a href="https://www.bregenzerwald.at/thema/kultur/" class="activity-links">Mehr zum Thema Veranstaltungen</a>
                     </li>
                     <li>
-                        <img src="assets/Icons/Kultur.svg" alt="Bergschuhe" class="activity-icon">
+                        <img src="assets/Icons/Kultur.svg" alt="book" class="activity-icon">
                         <p>kultur</p>
                         <span class="activity-text">
                           Die Schubertiade direkt in Schwarzenberg ist das kulturelle Event im Bregenzerwald. Doch die Region hat noch mehr zu bieten. Das  Festival FAQ Bregenzerwald, das Werkraumhaus in Andelsbuch und die zahlreichen Museen sind super für Kulturliebhaber. 
                         </span>
                         <a href="                        https://www.bregenzerwald.at/thema/ausfluege/
-    " class="activity-links">Kulturelle Aktivitäten</a>
+    " class="activity-links">Kultur im Sommer</a>
                     </li>
                 </ul>
             </div>
@@ -156,7 +156,7 @@
                         <p>Kultur</p>
                         <span class="activity-text">Falls Sie bei Ihrem Winterurlaub mal einen Tag abseits der Pisten brauchen bieten die zahlreichen Museen eine gute Möglichkeit dazu. Hier können Sie einen Blick in die Geschichte, Kultur und das künstlerische Schaffen im Bregenzerwald werfen.</span>
                         <a href="                        https://www.bregenzerwald.at/thema/kultur/
-    " class="activity-links">Kulturelle Aktivitäten</a>
+    " class="activity-links">Kultur im Winter</a>
                     </li>
                     </li>
                 </ul>

@@ -975,7 +975,32 @@ main {
 
 
 @media screen and (max-width:425px) {
-
+    .card-heading{
+        display: inline;
+        font-size: 22px;
+    }
+    .card-image{
+        display: none;
+    }
+    .activity-ul{
+        flex-direction: column;
+    }
+    .main-aktivitaeten{
+        grid-column-gap: 10px;
+    }
+    .winter, .sommer{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 20px;
+    }
+    .activity-ul li{
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .activity-ul li p{
+        letter-spacing: 0.05em;
+    }
     #preise-heading {
         margin-top: 0;
         padding: 20px 0 0 0;
