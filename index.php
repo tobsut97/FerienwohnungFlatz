@@ -83,7 +83,7 @@
             <section class="welcome-section">
                 <div class="general-info">
                     <div class="general-info-text">
-                        <h2>
+                        <h2 id="welcome-heading">
                             Herzlich Willkommen
                         </h2>
                         <p id="welcome-text">
@@ -95,17 +95,17 @@
                     </div>
                     <div class="general-info-image">
                         <img id="general-info-background" src="assets/ferienwohnung_flatz_01.jpg" alt="eingang">
-<!--                        <button class="button-not-hamburger" id="mobile-button-not-hamburger" href="anfrage.php" type="button">
-                        <a href="anfrage.php">Unverbindlich Anfragen</a>
-                        </button>-->
                     </div>
+                    <button class="button-not-hamburger" id="mobile-button-not-hamburger" href="anfrage.php" type="button">
+                        <a href="anfrage.php">Unverbindlich Anfragen</a>
+                        </button>
                 </div>
             </section>
 
             <section class="preise-section" id="preise">
                 <div class="general-info preise-mobile">
                     <div class="general-info-text">
-                        <h2>
+                        <h2 id="preise-heading">
                             Preise
                         </h2>
                         <p id="price-text">
