@@ -95,9 +95,9 @@
                     </div>
                     <div class="general-info-image">
                         <img id="general-info-background" src="assets/ferienwohnung_flatz_01.jpg" alt="eingang">
-                        <button class="button-not-hamburger" id="mobile-button-not-hamburger" href="anfrage.php" type="button">
+<!--                        <button class="button-not-hamburger" id="mobile-button-not-hamburger" href="anfrage.php" type="button">
                         <a href="anfrage.php">Unverbindlich Anfragen</a>
-                        </button>
+                        </button>-->
                     </div>
                 </div>
             </section>
