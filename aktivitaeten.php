@@ -149,7 +149,7 @@
                         <img src="assets/Icons/skitouren.svg" alt="Bergschuhe" class="activity-icon">
                         <p>skitouren</p>
                         <span class="activity-text">Die vielen Berge im Bregenzerwald sind für wunderschöne SKitouren geradezu prädestiniert. Für diejenigen die noch nie eine Skitour gemacht haben gibt es Berg- und Skiführer der Skischulen, diese werden Sie in die Welt des Skitourens einführen.</span>
-                         <a href="https://www.bregenzerwald.at/thema/skitouren-bregenzerwald/" class="activity-links">Mehr zum Thema Skitouren</a>
+                        <a href="https://www.bregenzerwald.at/thema/skitouren-bregenzerwald/" class="activity-links">Mehr zum Thema Skitouren</a>
                     </li>
                     <li>
                         <img src="assets/Icons/KulturWinter.svg" alt="Bergschuhe" class="activity-icon">
@@ -162,6 +162,17 @@
                 </ul>
             </div>
         </main>
+        <div class="contact">
+            <h5 class="footer-heading">Ferienwohnung Ottilia Flatz</h5>
+            <p class="footer-text">Tel. +43 664 8962976</p>
+            <p class="footer-text">
+                <a href="mailto:ottilia.flatz@gmail.com">ottilia.flatz@gmail.com</a>
+            </p>
+            <p class="footer-text">6867 Schwarzenberg | Brittenberg 480</p>
+            <p class="footer-text">
+                <a href="impressum.php">Impressum</a>
+            </p>
+        </div>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>

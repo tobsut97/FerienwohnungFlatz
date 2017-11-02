@@ -197,6 +197,9 @@
                 <a href="mailto:ottilia.flatz@gmail.com">ottilia.flatz@gmail.com</a>
             </p>
             <p class="footer-text">6867 Schwarzenberg | Brittenberg 480</p>
+            <p class="footer-text">
+                <a href="impressum.php">Impressum</a>
+            </p>
         </div>
     </div>
 

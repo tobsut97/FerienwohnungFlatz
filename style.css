@@ -369,9 +369,9 @@ li {
     align-items: stretch;
 }
 
-.main-wohnung,
-.main-preise {
+.main-wohnung {
     margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 .wohnung-info {
@@ -655,6 +655,7 @@ main {
 .sommer,
 .winter {
     background-color: white;
+    margin-bottom: 100px;
 }
 
 .card-image {
