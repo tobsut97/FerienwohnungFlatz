@@ -3,6 +3,10 @@ html {
     height: 100%;
 }
 
+#mobile-button-not-hamburger{
+    display: none;
+}
+
 .activity-ul {
     display: flex !important;
     flex-direction: row;
