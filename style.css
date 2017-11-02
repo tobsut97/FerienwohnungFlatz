@@ -931,123 +931,153 @@ main {
     .anfrage-textblock {
         padding-top: 20px;
     }
-    @media screen and (max-width: 950px) {
-        .hero-heading {
-            font-size: 32px;
-        }
-        .hero-subtitle {
-            font-size: 22px;
-        }
-        .hero {
-            background-position: 60% 0%;
-            max-height: 90%;
-            height: auto;
-        }
-        .hero-content {
-            min-height: 90%;
-            height: auto;
-        }
+    .activity-ul li p {
+        padding: 0;
+        display: inline;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        color: #555;
+        letter-spacing: 0.09em;
+        margin-top: 18px;
+        margin-bottom: 5px;
     }
-
-
-    @media screen and (max-width:425px) {
-        #preise-heading {
-            margin-top: 0;
-            padding: 20px 0 0 0;
-        }
-        .general-info-image {
-            padding: 0;
-            order: -1;
-            min-width: 100%;
-        }
-        .general-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .general-info-text {
-            padding: 0;
-        }
-        .general-info-text h2 {
-            margin-top: -40%;
-            color: black;
-            padding-bottom: 35%;
-            text-align: center;
-        }
-        #general-info-background {
-            -webkit-filter: opacity(.4);
-            filter: opacity(.4);
-        }
-        #welcome-text,
-        #price-text {
-            padding-left: 15px;
-            padding-right: 10px;
-        }
-        #welcome-text{
-            padding-bottom: 10px;
-        }
-        .pricing-info-section {
-            padding-top: 20px;
-        }
-
-        #background-heading {
-            font-size: 40px;
-            padding-top: 40px;
-        }
-        
-        #impressions{
-            padding-top: 20px;
-        }
-        #mobile-button-not-hamburger{
-            order:999;
-            margin-bottom: 30px;
-            margin-left: 15px;
-            width:70%;
-        }
-        
+    .activity-text {
+        display: none;
+    }
+    .hero-heading {
+        font-size: 32px;
+    }
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    .hero {
+        background-position: 60% 0%;
+        max-height: 90%;
+        height: auto;
+    }
+    .hero-content {
+        min-height: 90%;
+        height: auto;
+    }
+    .activity-links{
+        font-size: 14px;
+        word-wrap: break-word;
     }
     
-    @media screen and (max-width:350px){
-        .hero-heading{
-            font-size:25px;
-        }
-        .hero-subtitle{
-            font-size: 18px;
-        }
-        #welcome-heading{
-            padding-bottom:15%; 
-        }
-        #welcome-text, #price-text{
-            font-size: 14px;
-            line-height: 23px;
-        }
-        
-        #price-text{
-            max-width: 240px;
-            letter-spacing: 0.01em;
-            padding-bottom: 18px;
-        }
-        #mobile-button-not-hamburger{
-            width: 70%;
-            font-size: 13px;
-            padding: 15px 15px;
-        }
-        .row span{
-            font-size: 14px;
-            padding-right: 20px;
-        }
-        .row{
-            padding-left:30px;
-        }
-        .contact{
-            padding-left: 35px;
-            font-size: 14px;
-        }
-        .footer-text{
-            font-size: 14px;
-        }
-        .footer-heading{
-            font-size: 16px;
-        }
-
+    .activity-ul li{
+        width:45%;
+        min-height: 150px;
+        max-height: 150px;
     }
+}
+
+
+@media screen and (max-width:425px) {
+
+    #preise-heading {
+        margin-top: 0;
+        padding: 20px 0 0 0;
+    }
+    .general-info-image {
+        padding: 0;
+        order: -1;
+        min-width: 100%;
+    }
+    .general-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .general-info-text {
+        padding: 0;
+    }
+    .general-info-text h2 {
+        margin-top: -40%;
+        color: black;
+        padding-bottom: 35%;
+        text-align: center;
+    }
+    #general-info-background {
+        -webkit-filter: opacity(.4);
+        filter: opacity(.4);
+    }
+    #welcome-text,
+    #price-text {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    #welcome-text {
+        padding-bottom: 10px;
+    }
+    .pricing-info-section {
+        padding-top: 20px;
+    }
+
+    #background-heading {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    #impressions {
+        padding-top: 20px;
+    }
+    #mobile-button-not-hamburger {
+        order: 999;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        width: 70%;
+    }
+
+    .contact {
+        padding-left: 40px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .hero-heading {
+        font-size: 25px;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    #welcome-heading {
+        padding-bottom: 15%;
+    }
+    #welcome-text,
+    #price-text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    #price-text {
+        max-width: 240px;
+        letter-spacing: 0.01em;
+        padding-bottom: 18px;
+    }
+    #mobile-button-not-hamburger {
+        width: 70%;
+        font-size: 13px;
+        padding: 15px 15px;
+    }
+    .row span {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    .row {
+        padding-left: 30px;
+    }
+    .contact {
+        padding-left: 35px;
+        font-size: 14px;
+    }
+    .footer-text {
+        font-size: 14px;
+    }
+    .footer-heading {
+        font-size: 16px;
+    }
+
+}
